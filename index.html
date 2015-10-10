@@ -11,15 +11,14 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12 transition">
+      <div class="col-md-8 col-md-offset-2 main-content">
         <h1 class="headline text-center">Guessing Game</h1>
         <div class="box text-center">
           <h3 class="current-guess-status"></h3>
           <input type="text" class="guess-box" placeholder="Input Number 1 - 100" onkeydown="if (event.keyCode === 13) numberCheck()">
-
-          <button type="button" onclick="numberCheck()" class="btn btn-lg btn-primary">Check your guess</button>
-        <button type="button" onclick="resetGame()" class="btn btn-lg">Reset Game</button>
-        <button type="button" onClick="numHint()" class="btn btn-lg">Hint</button>
+          <button type="button" onclick="numberCheck()" class="btn btn-lg btn-success">Check your guess</button>
+        <button type="button" onclick="resetGame()" class="btn btn-lg btn-danger">Reset Game</button>
+        <button type="button" onClick="numHint()" class="btn btn-lg btn-warning">Hint</button>
         <h3 class="guess-num">You have 5 guesses left</h3>
       </div>
       </div>

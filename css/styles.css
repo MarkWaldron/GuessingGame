@@ -1,10 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Orbitron:400,700,500);
 
-.transition {
-  background: linear-gradient(to top, white 0%, lightsteelblue 25%, lightslategray 50%);
-  max-width: 100%;
-  height: 100vh;
-  overflow: auto;
+body {
+  background: url(../img/thegap.jpg) no-repeat;
+  background-size: cover;
+}
+
+.main-content {
+  border-radius: 2%;
+  margin-top: 4em;
 }
 
 .headline {
@@ -12,7 +15,7 @@
   color: white;
   font-size: 5em;
   text-shadow: .1em .1em .2em lightgrey;
-  padding: 1em;
+  padding: .5em;
 }
 
 .box {
@@ -21,14 +24,19 @@
 }
 
 .guess-box {
-  height: 100px;
-  width: 200px;
+  height: 50px;
+  width: 225px;
   text-align: center;
   border-radius: 5%;
+  margin: 3em;
 }
 
 .btn {
-  margin: 1em;
-  background-color: red;
+  margin: .5em;
   min-width: 100px;
+}
+
+h3 {
+  color: white;
+  font-size: 2em;
 }
