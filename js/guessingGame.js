@@ -13,6 +13,7 @@ $(document).ready(function(){
   var hintUpper =  Math.round(Math.random() * 10)
   var hintLower =  Math.round(Math.random() * 10)
 
+  $("#youWin").hide();
 
   // Buttons
   $("#playerGuess").on("keypress", function(e){
@@ -53,6 +54,9 @@ $(document).ready(function(){
       if ((userNum === solution) && (guesses >= 0)) {
           $("body").css("background-color", "#ddd");
           $("#youWin").show();
+          $("#playerHint").hide();
+          $("#lowerHigher").hide();
+          $("#picks").hide();
           $("#playerStatus").text("You win! The number was " + solution + ".");
       } else if ((guesses === 0) && (userNum !== solution)) {
           $("#playerStatus").text("No luck! The number was " + solution + ".");

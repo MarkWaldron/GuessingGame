@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Orbitron:400,700,500);
 
 body {
-  background: url(../img/thegap.jpg) no-repeat;
-  background-size: cover;
+  background-color: #ddd;
 }
 
 .main-content {
