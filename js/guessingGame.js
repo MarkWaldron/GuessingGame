@@ -59,6 +59,8 @@ $(document).ready(function(){
           $("#picks").hide();
           $("#playerStatus").text("You win! The number was " + solution + ".");
       } else if ((guesses === 0) && (userNum !== solution)) {
+          $("#playerHint").hide();
+          $("#lowerHigher").hide();
           $("#playerStatus").text("No luck! The number was " + solution + ".");
           picked.push(userNum);
       } else if ((guesses !== 0) && (userNum !== solution)) {
