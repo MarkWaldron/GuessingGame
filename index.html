@@ -11,19 +11,26 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2 main-content">
+      <div class="col-lg-10 col-lg-offset-1 col-xs-12 main-content">
         <h1 class="headline text-center">Guessing Game</h1>
+          <p id="youWin" class="text-center"><img src="img/congrats.gif"></p>
+
         <div class="box text-center">
-          <h3 class="current-guess-status"></h3>
-          <input type="text" class="guess-box" placeholder="Input Number 1 - 100" onkeydown="if (event.keyCode === 13) numberCheck()">
-          <button type="button" onclick="numberCheck()" class="btn btn-lg btn-success">Check your guess</button>
-        <button type="button" onclick="resetGame()" class="btn btn-lg btn-danger">Reset Game</button>
-        <button type="button" onClick="numHint()" class="btn btn-lg btn-warning">Hint</button>
-        <h3 class="guess-num">You have 5 guesses left</h3>
-      </div>
+          <h2 id="playerStatus"></h3>
+          <h2 id="lowerHigher"></h3>
+          <h4 id="playerHint"></h4>
+          <input type="text" id="playerGuess" class="guess-box" placeholder="Input Number 1 - 100">
+          <button type="button" id="guessSubmit" class="btn btn-lg btn-success">Check your guess</button>
+          <button type="button" id="resetGame" class="btn btn-lg btn-danger">Reset Game</button>
+          <button type="button" id="numHint" class="btn btn-lg btn-warning">Hint</button>
+          <h3 id="guessNum">You have 5 guesses left</h3>
+          <h3 id="picks"></h3>
+        </div>
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/guessingGame.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
